@@ -9,11 +9,42 @@ padding-bottom: 118px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../picture/fon_header.jpg);
-//   @media  (min-width:480px) {
-//     width: 480px;
-//   }
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../picture/fon-mob-1x.jpg);
+  
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../picture/fon-mob-2x.jpg);
+}
+
+@media screen and (min-width:768px) {
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../picture/fon-tab-1x.jpg);
+  
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../picture/fon-tab-2x.jpg);
+}
+} 
+@media screen and (min-width:1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../picture/fon-desk-1x.jpg);
+  
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../picture/fon-desk-2x.jpg);
+} 
+}
  }
+
+  
 
 .name-idia {
 font-weight: 900;

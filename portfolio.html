@@ -14,31 +14,75 @@
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
-    <!-- <header class="header">
+  
+    <header class="header">
         <div class="conteiner">
-            <a href="Веб студия" class="logo header__logo">Web<span class="logo--dark">Studio</span></a>
-            <ul class="menu-list noflex dot-non">
-                <li class="menu-list__link"><a href="./index.html" class="header-mouse">Студия</a></li>
-                <li class="menu-list__link menu-list__link-linep"><a href="Портфолио" class="header-mouse">Портфолио</a></li>
-                <li class="menu-list__link"><a href="Контакт" class="header-mouse">Контакты</a></li>
+                <a href="Веб студия" class="logo header__logo">Web<span class="logo--dark">Studio</span></a>
+        <ul class="menu-list noflex dot-non">
+            <li class="menu-list__link"><a href="./index.html" class="header-mouse">Студия</a></li>
+            <li class="menu-list__link menu-list__link-linep"><a href="Портфолио" class="header-mouse">Портфолио</a></li>
+            <li class="menu-list__link"><a href="Контакт" class="header-mouse">Контакты</a></li>
+        </ul>
+        <div class="contakt header__contakt">
+    <a href="mailto:info@devstudio.com" class="contakt__adress">
+     <svg class="contakt__icon-ramm" width="16" height="12">
+        <use href="./picture/symbol-defs.svg#icon-envelope"></use>
+     </svg>
+     info@devstudio.com
+    </a>
+    <a class="contakt__tel" href="tel:+380961111111">
+     <svg class="contakt__icon-ramt" width="10" height="16">
+        <use href="./picture/symbol-defs.svg#icon-smartphone"></use>
+     </svg>
+    +38 096 111 11 11
+    </a>
+        </div>
+        <button type="button" class="menu-click">
+            <svg class="menu-header" width="40" height="40">
+                <use href="./picture/symbol-defs.svg#icon-menu"></use>
+            </svg>
+        </button>
+        </div>
+
+        <div class="modal-menu is-hidden">
+            <!-- <div class="conteiner"> -->
+                <div class="modal-menu-top">
+            <button type="button" class="modal-menu__click">
+                <svg class="modal-menu__header" width="40" height="40">
+                    <use href="./picture/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="modal-menu-list">
+                <li class="modal-menu-list__link"><a class="modal-menu__mouse" href="./index.html">Студия</a></li>
+        
+                <li class="modal-menu-list__link"><a class="modal-menu__mouse" href="">Портфолио</a></li>
+        
+                <li class="modal-menu-list__link"><a class="modal-menu__mouse" href="Контакты">Контакты</a></li>
             </ul>
-            <div class="contakt header__contakt">
-                <a href="mailto:info@devstudio.com" class="contakt__adress">
-                    <svg class="contakt__icon-ramm" width="16" height="12">
-                       <use href="./picture/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
+        </div>
+            <div class="modal-menu-down">
+                <ul class="modal-menu-adress">
+                <li class="menu__tel"><a class="modal-menu-tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+                    </a>
+                </li>
+                    <li class="menu__mail"><a class="modal-menu-mail" href="mailto:info@devstudio.com">
                     info@devstudio.com
                    </a>
-                   <a class="contakt__tel" href="tel:+380961111111">
-                    <svg class="contakt__icon-ramt" width="10" height="16">
-                       <use href="./picture/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                   +38 096 111 11 11
-                   </a>
-            </div>
-
-            </div>
-        </header> -->
+                </li>
+                </ul>
+          
+        <ul class="modal-menu-soc">
+            <li class="modal-menu-soc__link"><a href="" class="menu-soc__cl">Instagram</a></li>
+            <li class="modal-menu-soc__link"><a href="" class="menu-soc__cl">Twitter</a></li>
+            <li class="modal-menu-soc__link"><a href="" class="menu-soc__cl">Facebook</a></li>
+            <li class="modal-menu-soc__link"><a href="" class="menu-soc__cl">LinkedIn</a></li>
+        </ul>
+        </div>
+        <!-- </div> -->
+        </div>
+        </div>
+    </header>
 <main class="">
 <section class="betveen">
     <div class="conteiner">
@@ -55,7 +99,19 @@
     <ul class="dot-non indent-flex">
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_let.jpg" alt="На экране ноутбука три человека" class="space-pic" >
+                <picture>
+                    <source srcset="./picture/let-desk-1x.jpg 1x, 
+                    ./picture/let-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/let-tab-1x.jpg 1x, 
+                    ./picture/let-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/let-mob-1x.jpg 1x, 
+                    ./picture/let-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_let.jpg" alt="На экране ноутбука три человека" class="space-pic" >
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
         </div>
             <div class="indent-in">
@@ -65,7 +121,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_bask.jpg" alt="Баскетболист делает кидок" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/bask-desk-1x.jpg 1x, 
+                    ./picture/bask-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/bask-tab-1x.jpg 1x, 
+                    ./picture/bask-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/bask-mob-1x.jpg 1x, 
+                    ./picture/bask-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_bask.jpg" alt="Баскетболист делает кидок" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -75,7 +143,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_sea.jpg" alt="Реклама рыбного ресторана" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/sea-desk-1x.jpg 1x, 
+                    ./picture/sea-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/sea-tab-1x.jpg 1x, 
+                    ./picture/sea-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/sea-mob-1x.jpg 1x, 
+                    ./picture/sea-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_sea.jpg" alt="Реклама рыбного ресторана" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -85,7 +165,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_head.jpg" alt="Полноразмерніе наушники" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/head-desk-1x.jpg 1x, 
+                    ./picture/head-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/head-tab-1x.jpg 1x, 
+                    ./picture/head-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/head-mob-1x.jpg 1x, 
+                    ./picture/head-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_head.jpg" alt="Полноразмерніе наушники" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -95,7 +187,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_box.jpg" alt="Две коробки" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/box-desk-1x.jpg 1x, 
+                    ./picture/box-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/box-tab-1x.jpg 1x, 
+                    ./picture/box-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/box-mob-1x.jpg 1x, 
+                    ./picture/box-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_box.jpg" alt="Две коробки" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -105,7 +209,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_mon.jpg" alt="Монитор" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/mon-desk-1x.jpg 1x, 
+                    ./picture/mon-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/mon-tab-1x.jpg 1x, 
+                    ./picture/mon-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/mon-mob-1x.jpg 1x, 
+                    ./picture/mon-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_mon.jpg" alt="Монитор" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -115,7 +231,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_book.jpg" alt="Открытая книга" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/book-desk-1x.jpg 1x, 
+                    ./picture/book-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/book-tab-1x.jpg 1x, 
+                    ./picture/book-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/book-mob-1x.jpg 1x, 
+                    ./picture/book-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_book.jpg" alt="Открытая книга" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -125,7 +253,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_etic.jpg" alt="Этикетка на веревочке" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/etic-desk-1x.jpg 1x, 
+                    ./picture/etic-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/etic-tab-1x.jpg 1x, 
+                    ./picture/etic-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/etic-mob-1x.jpg 1x, 
+                    ./picture/etic-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_etic.jpg" alt="Этикетка на веревочке" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -135,7 +275,19 @@
         </li>
         <li class="indent-box">
             <div class="box-anim">
-            <img src="./picture/port_not.jpg" alt="Работа за ноутбуком" class="space-pic" width="370" height="294">
+                <picture>
+                    <source srcset="./picture/not-desk-1x.jpg 1x, 
+                    ./picture/not-desk-2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+                    <source srcset="./picture/not-tab-1x.jpg 1x, 
+                    ./picture/not-tab-2x.jpg 2x"
+                    media="(min-width:768px)"/>
+                    <source srcset="./picture/not-mob-1x.jpg 1x, 
+                    ./picture/not-mob-2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                    <img src="./picture/port_not.jpg" alt="Работа за ноутбуком" class="space-pic" width="370" height="294">
+                </picture>
+            
             <p class="indent-box-anim">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="indent-in">
@@ -147,7 +299,7 @@
 </div>
 </section>
 </main>
-<!-- <footer class="footer">
+<footer class="footer">
     <div class="conteiner">
         <div class="footer-top-box">
         <div class="footer-cont">
@@ -208,6 +360,7 @@
     </form>
 </div>
 </div>
-</footer>  -->
+</footer> 
+<script src="./js/menu.js"></script>
 </body>
 </html>

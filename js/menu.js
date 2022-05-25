@@ -1,16 +1,16 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[menu-click]"),
-      closeModalBtn: document.querySelector("[modal-menu__click]"),
-      modal: document.querySelector("[modal-menu]"),
-      body: document.querySelector("body"),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-      refs.body.classList.toggle("no-scroll");
-    }
-  })();
+  const refs = {
+    openMenuBtn: document.querySelector(".menu-click"),
+    closeMenuBtn: document.querySelector(".modal-menu__click"),
+    menu: document.querySelector(".modal-menu"),
+    body: document.querySelector("body"),
+  };
+
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    refs.menu.classList.toggle("is-hidden");
+    refs.body.classList.toggle("no-scroll");
+  }
+})();

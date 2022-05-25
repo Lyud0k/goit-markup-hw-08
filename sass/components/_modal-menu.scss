@@ -1,17 +1,31 @@
 .modal-menu {
-    position: absolute;
+    // display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
     background-color: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: 103vh;
 padding-top: 10px;
 padding-right: 15px;
 padding-left: 40px;
 padding-bottom: 48px;
-.conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+overflow-y: scroll;
+overflow-y: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+// .conteiner {
+//     overflow-y: auto;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     height: 100%;
+
+// }
  }
 
 .modal-menu__click { 
@@ -19,9 +33,10 @@ padding-bottom: 48px;
     margin-left: auto;
     border: none;
     background-color: #ffffff;
+    
 }
 
-.modal-menu__-header { }
+.modal-menu__header { }
 .modal-menu-list {
     list-style: none;
  }
@@ -47,6 +62,8 @@ transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-menu-down{
 // padding-top: 302px;
+// position: absolute;
+// bottom: 0;
 }
 
 .modal-menu-adress{
@@ -87,6 +104,15 @@ color: #2196F3;
 .modal-menu-soc__link {
 
  }
+ .modal-menu-soc__link:not(:first-child)::before{
+   
+            content: "";
+            
+            height: 22px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+    }
+ 
 
  .menu-soc__cl{
     text-decoration: none;
