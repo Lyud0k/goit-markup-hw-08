@@ -29,6 +29,10 @@ ul, li {
   display: flex;
 }
 
+.border-non {
+  border: none;
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -222,6 +226,7 @@ ul, li {
 }
 
 .conteiner {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -249,7 +254,7 @@ ul, li {
   left: 0px;
   background-color: #ffffff;
   width: 100vw;
-  height: 103vh;
+  height: 100vh;
   padding-top: 10px;
   padding-right: 15px;
   padding-left: 40px;
@@ -266,6 +271,11 @@ ul, li {
   margin-left: auto;
   border: none;
   background-color: #ffffff;
+  fill: #212121;
+}
+
+.modal-menu__click:hover, .modal-menu__click:focus {
+  fill: #2196F3;
 }
 
 .modal-menu-list {
@@ -283,10 +293,10 @@ ul, li {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-menu__mouse:hover, .modal-menu__mouse:focus {
-  color: var(--navi-color);
+
+.modal-menu__mouse--blue {
+  color: #2196F3;
 }
 
 .modal-menu-adress {
@@ -303,6 +313,7 @@ ul, li {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196F3;
+  text-decoration: none;
 }
 
 .modal-menu-mail {
@@ -321,7 +332,10 @@ ul, li {
 .modal-menu-soc {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+}
+
+.modal-menu-soc__link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .modal-menu-soc__link:not(:first-child)::before {
@@ -558,6 +572,12 @@ ul, li {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .footer-top-box {
@@ -685,7 +705,8 @@ ul, li {
 
 @media screen and (min-width: 768px) {
   .footer-mail-box {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -704,7 +725,7 @@ ul, li {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-mail {
     text-align: center;
   }
@@ -728,6 +749,13 @@ ul, li {
   .footer-mail-wind {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-mail-wind {
+    margin-bottom: 20px;
+    width: 450px;
+    height: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -759,6 +787,11 @@ ul, li {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-mail-cl {
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-mail-cl {
     position: absolute;
@@ -769,9 +802,17 @@ ul, li {
   margin-left: 10px;
 }
 
-.betveen {
-  padding-top: 100px;
-  padding-bottom: 114px;
+@media screen and (max-width: 1199px) {
+  .betveen {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .betveen {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-line {
@@ -782,7 +823,6 @@ ul, li {
 
 .main-click {
   text-decoration: none;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -796,6 +836,12 @@ ul, li {
 @media screen and (min-width: 768px) {
   .main-click {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-click {
+    margin-bottom: 50px;
   }
 }
 
@@ -818,6 +864,7 @@ ul, li {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
 }
 
 .team-bl:hover, .team-bl:focus {
@@ -844,7 +891,6 @@ ul, li {
   .indent-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -872,7 +918,6 @@ ul, li {
 }
 @media screen and (min-width: 1200px) {
   .indent-box {
-    margin-right: 30px;
     width: calc((100% - 90px) / 3);
   }
 }
@@ -955,6 +1000,8 @@ ul, li {
 }
 @media screen and (min-width: 1200px) {
   .name {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../picture/fon-desk-1x.jpg);
   }
 }
@@ -1000,6 +1047,7 @@ ul, li {
 @media screen and (min-width: 768px) {
   .duty {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1016,6 +1064,11 @@ ul, li {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .duty-icon__list {
+    margin-bottom: 0px;
   }
 }
 
@@ -1035,7 +1088,6 @@ ul, li {
 }
 
 .duty-icon__cl {
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -1047,6 +1099,18 @@ ul, li {
 @media screen and (max-width: 767px) {
   .duty-icon__cl {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .duty-icon__cl {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .duty-icon__cl {
+    width: 270px;
+    height: 120px;
   }
 }
 
@@ -1128,6 +1192,12 @@ ul, li {
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: var(--edge-padd);
@@ -1147,16 +1217,19 @@ ul, li {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .team-profettional {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-profettional {
     margin-bottom: var(--fif-mar);
     font-size: 36px;
     line-height: 1.16;
   }
-}
-
-.team-face {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1170,6 +1243,7 @@ ul, li {
 @media screen and (min-width: 1200px) {
   .team-noflex {
     flex-wrap: nowrap;
+    margin-bottom: 0px;
   }
 }
 
@@ -1195,6 +1269,8 @@ ul, li {
 
 .team-position {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-name {
   line-height: 1.19;
@@ -1243,6 +1319,12 @@ ul, li {
     padding-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .client {
     padding-top: 94px;
@@ -1250,30 +1332,32 @@ ul, li {
   }
 }
 
-.client-noflex {
+.client-icon-box {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 @media screen and (min-width: 1200px) {
-  .client-noflex {
+  .client-icon-box {
     flex-wrap: nowrap;
+    margin-bottom: 0px;
   }
 }
 
-.client-icon-box {
+.client-icon-part {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
-  .client-icon-box {
+  .client-icon-part {
     width: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
-  .client-icon-box {
+  .client-icon-part {
     width: calc((100% - 90px) / 3);
+    margin-bottom: 30px;
   }
 }
 

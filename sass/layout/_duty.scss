@@ -6,6 +6,7 @@
     @media screen and (min-width:768px) {
     
        padding-top: 60px;
+       padding-bottom: 60px;
     }
     @media screen and (min-width:1200px) {
     padding-top:var(--edge-padd);
@@ -19,6 +20,9 @@
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
+    }
+    @media screen and (min-width:1200px){
+        margin-bottom: 0px;
     }
 }
 
@@ -39,7 +43,6 @@
 // }
 
 .duty-icon__cl {
-    width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -49,8 +52,16 @@
     margin-bottom: 30px;
     @media screen and (max-width: 767px) {
         width: 100%;
-        
+ 
+}
+@media screen and (min-width:768px) {
+    width: 354px;
+    height: 120px; 
+}
 
+@media screen and (min-width:1200px) {
+    width: 270px;
+    height: 120px;
 }
 }
 // .duty-list__item {

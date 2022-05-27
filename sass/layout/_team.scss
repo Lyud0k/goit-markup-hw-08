@@ -4,6 +4,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    @media screen and (min-width:768px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     @media screen and (min-width:1200px) {
     padding-top: var(--edge-padd);
     padding-bottom: var(--edge-padd);
@@ -12,10 +16,16 @@
 
 .team-profettional {
     font-weight: 700;
+    
     letter-spacing: 0.03em;
     text-align: center;
     @media screen and (max-width: 767px) {
       
+        font-size: 28px;
+        line-height: 1.18;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:768px){
         font-size: 28px;
         line-height: 1.18;
         margin-bottom: 30px;
@@ -31,7 +41,7 @@
      }
     
 .team-face {
-    margin-bottom: 30px;
+  
 }
 
 .team-noflex {
@@ -43,6 +53,7 @@
     }
     @media screen and (min-width:1200px) {
         flex-wrap: nowrap;
+       margin-bottom: 0px;
     }
 }
 
@@ -67,12 +78,14 @@ width: calc((100% - 120px) / 2);
 
 .team-position {
 text-align: center;
+padding-top: 30px;
+    padding-bottom: 30px;
     @media screen and (max-width: 767px) {
-
     }
-    // padding-top: 30px;
-    // padding-bottom: 30px;
+    @media screen and (min-width:1200px){
+    
     }
+}
     
 .team-name {
     line-height: 1.19;
