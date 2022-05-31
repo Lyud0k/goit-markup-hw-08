@@ -14,30 +14,36 @@
 }
 
 .duty-icon__list{
-    margin-bottom: -30px;
+    
     
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
+        margin-bottom: -30px;
     }
-    @media screen and (min-width:1200px){
-        margin-bottom: 0px;
-    }
+  
 }
 
 .duty-icon__part{
-
+    @media screen and (max-width: 767px){
+&:not(:last-child){
     margin-bottom: 30px;
+}
+}
     
     @media screen and (min-width:768px) {
         margin-right: 30px;
-        width: calc((100% - 60px) / 2);
+        margin-bottom: 30px;
+        flex-basis: calc((100% - 60px) / 2);
+
     }
     @media screen and (min-width:1200px) {
-        width: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+        
     }
 }
+
 // .duty-icon +.duty-icon{
 //     margin-left: 30px;
 // }
@@ -87,5 +93,5 @@ margin-bottom: 10px;
  }
 
  .duty-feature{
-   height: 50px;
+//    height: 50px;
  }
