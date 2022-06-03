@@ -1060,20 +1060,12 @@ ul, li {
   .duty-icon__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    gap: 30px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .duty-icon__part:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .duty-icon__part {
-    margin-right: 30px;
-    margin-bottom: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
@@ -1228,8 +1220,7 @@ ul, li {
   .team-noflex {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    gap: 30px;
   }
 }
 
@@ -1237,21 +1228,14 @@ ul, li {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 767px) {
-  .team-item:not(:last-child) {
-    margin-bottom: var(--third-mar);
-  }
-}
 @media screen and (min-width: 768px) {
   .team-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team-item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -1323,29 +1307,24 @@ ul, li {
 .client-icon-box {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
+  gap: 30px;
 }
 
 @media screen and (max-width: 767px) {
   .client-icon-part {
-    max-width: calc((100% - 60px) / 2);
+    max-width: calc((100% - 30px) / 2);
     width: 100%;
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .client-icon-part {
-    max-width: calc((100% - 90px) / 3);
+    max-width: calc((100% - 60px) / 3);
     width: 100%;
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .client-icon-part {
-    max-width: calc((100% - 180px) / 6);
+    max-width: calc((100% - 150px) / 6);
   }
 }
 
